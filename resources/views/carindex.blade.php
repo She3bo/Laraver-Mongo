@@ -26,7 +26,6 @@
         <tbody>
 
         @foreach($cars as $car)
-            {{($car->id)}}
             <tr>
                 <td>{{$car->id}}</td>
                 <td>{{$car->carcompany}}</td>

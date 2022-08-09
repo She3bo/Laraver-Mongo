@@ -28,3 +28,8 @@ Route::get('car',[App\Http\Controllers\CarController::class,'index']);
 Route::get('edit/{id}',[App\Http\Controllers\CarController::class,'edit']);
 Route::post('edit/{id}',[App\Http\Controllers\CarController::class,'update']);
 Route::delete('{id}',[App\Http\Controllers\CarController::class,'destroy']);
+
+Route::resource('/players',App\Http\Controllers\PlayerController::class);
+
+Route::get('search',[App\Http\Controllers\PlayerController::class,'searchView'])->name('search');
+Route::post('search',[App\Http\Controllers\PlayerController::class,'search']);

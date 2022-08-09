@@ -36,7 +36,7 @@
                 <label for="Price">Unsubscribe Date:</label>
                 <input type="date" class="form-control" name="unsubscribe_date">
 
-                <label for="Price">compersion:</label>
+                <label for="Price"> Date Compersion:</label>
                 <select class="form-control col-md-4" name="operator">
                     <option selected>compersion</option>
                     <option value="1">greater than</option>

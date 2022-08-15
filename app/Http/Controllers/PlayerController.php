@@ -110,7 +110,7 @@ class PlayerController extends Controller
         $unsubscribe_date = new \DateTime($request->get('unsubscribe_date'));
         $operator = $request->get('operator') ;
 
-        $operator = $operator == '1' ? '<' : $operator == '2' ? '>' : '=' ;
+        $operator = $operator == '1' ? '<' : ($operator == '2' ? '>' : '=' );
 
         $players = Player::where('status' , $status )
                    ->where('unsubscribe_date',$operator,$unsubscribe_date)

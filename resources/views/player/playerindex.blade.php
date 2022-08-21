@@ -32,7 +32,7 @@
             <tr>
                 <td>{{$player->id}}</td>
                 <td>{{$player->username}}</td>
-                <td>{{$player->status ? 1 : 0}}</td>
+                <td>{{$player->status}}</td>
                 <td>{{$player->unsubscribe_date}}</td>
                 <td><a href="{{route('players.edit',$player->id)}}" class="btn btn-warning">Edit</a></td>
                 <td>

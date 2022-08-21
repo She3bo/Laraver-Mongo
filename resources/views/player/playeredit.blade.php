@@ -27,7 +27,7 @@
             <div class="col-md-4"></div>
             <div class="form-group col-md-4">
                 <label for="Model">Status:</label>
-                <input type="text" class="form-control" name="status" value="{{$player->status?1:0}}">
+                <input type="text" class="form-control" name="status" value="{{$player->status}}">
             </div>
         </div>
         <div class="row">
